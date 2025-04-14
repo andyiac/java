@@ -6,19 +6,19 @@ Java 8 新增了接口的默认方法。
 我们只需在方法名前面加个 default 关键字即可实现默认方法。
 */
 class InterfaceDefault implements Duck {
-	@Override
-	public void kua() {
-		System.out.println("hello from kua");
-	}
+    @Override
+    public void kua() {
+        System.out.println("hello from kua");
+    }
 
-	public static void main(String[] args) {
-		new InterfaceDefault().kua();
-	}
+    public static void main(String[] args) {
+        new InterfaceDefault().kua();
+    }
 }
 
 interface Duck {
-	void kua();
-	default void egg() {
-		System.out.println("hello from interface ");
-	}
+    void kua();
+    default void egg() {
+        System.out.println("hello from interface ");
+    }
 }
